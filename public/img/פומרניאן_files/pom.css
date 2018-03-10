@@ -1,0 +1,47 @@
+/* FONT TYPES */
+
+@font-face {
+    font-family: Almoni;
+    font-weight: none;
+    src: url("../fonts/almoni-dl-aaa-light.otf") format("opentype");
+}
+@font-face {
+    font-family:AlmoniBold;
+    font-weight:none;
+    src: url("../fonts/almoni-dl-aaa-bold.otf");
+}
+
+/* GLOBAL */
+*{margin:0;padding:0;}
+body{direction:rtl;font-family:AlmoniBold, Arial sans-serif !important;font-size:17px !important;background-color:#f4f4f4 !important;line-height:1.6em !important;}
+h1,h2,h3,h4,h5,h6{color:#1E90FF !important; font-family:AlmoniBold, Arial, sans-serif !important;text-align:center;}
+ul{;}
+li{font-size:17px;}
+a{color:#fff !important;}
+a:hover, a.active{color:#FAAFBA !important;background-color:#fff;}
+div.clr{clear:both;}
+@keyframes mymove {
+    0%   {top: 0px;}
+    50%  {top: 20px;}
+    100%  {top: 0px;}
+}
+
+/* HEADER */
+#main-header {color:#fff !important;background-color:#FAAFBA !important;margin:0;padding:0;}
+#main-header ul{text-align:center;list-style-type:none;}
+#main-header li{display:inline;padding:20px;}
+#main-header .social-wrapper{padding:0.5rem;display:inline-block;}
+#main-header .social-facebook:hover > a{background-color:#FAAFBA !important;color:#fff !important;}
+#main-header .social-facebook:hover > i{color:blue !important;}
+#main-header .social-insta:hover > a{background-color:#FAAFBA !important;color:#fff !important;}
+#main-header .social-insta:hover > i{color:coral;}
+#logo{;}
+/* MAIN */
+.section-a{;}
+.section-a p{color:black;}
+#gallery{margin:0 auto;}
+/* FOOTER */
+footer{background-color:#FAAFBA;height:150px;text-align:center;}
+footer .wrapper{padding-top:4.5rem;}
+
+
