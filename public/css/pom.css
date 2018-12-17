@@ -54,7 +54,7 @@ div.clr{clear:both;}
 .section-d{background-color:#E03997;text-align:center;direction:rtl;list-style-type: none !important;padding-bottom:1rem;}
 .section-d .heading{padding-bottom:1.5rem;}
 .section-d .form{width:100%;margin:0;direction:rtl !important;}
-.section-d .form .field{display:inline-block;padding:0;}
+.section-d .form .field{display:inline-block;padding:1%;}
 .section-d .form .field input{text-align:center;}
 .section-d .form .field .ui.input{width:200px;}
 .section-d .form .field #comment{width:14rem !important;}
@@ -63,6 +63,14 @@ div.clr{clear:both;}
 .section-d #success{display:inline;}
 .section-d div#submit.ui.inverted.submit.button{margin:1rem;}
 
+/*.ui.corner.labeled.input.textarea textarea {
+    width: 100%;
+    padding: 0 !important;
+}*/
+
+.field.textarea{
+    width: 60%;
+}
 
 /* FOOTER */
 footer{background-color:#FAAFBA;height:auto;text-align:center;}

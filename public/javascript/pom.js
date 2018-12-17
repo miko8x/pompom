@@ -1,12 +1,13 @@
 var api;
 
 jQuery(document).ready(function(){
-    function rZoom(){
-        api.resetZoom();
-    }
             
-    api = jQuery("#gallery").unitegallery();
-    rZoom();
+    api = jQuery("#gallery").unitegallery({
+        slider_zoom_max_ratio: 2, // max zoom level. Not required, but good to have
+        slider_scale_mode: "fit", // don't scale by default
+        slider_zoom_step: 1.2 // also not required
+    });
+    
 
         $('#form')
           .form({
