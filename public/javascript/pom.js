@@ -51,8 +51,9 @@ jQuery(document).ready(function(){
             fullname: $('.fullname input').val(),
             phonenumber: $('.phonenumber input').val(),
             email: $('.email input').val(),
-            content:$('.content input').val(),
+            content: $('.maltese textarea').val()
         };
+        console.log(data);
         $.post($(this).attr('action'), $(this).serialize(), function(res){
             if (!res.is_validated){
                 modifyCss('.ui.dimmer', 'remove', 'active');

@@ -1,98 +1,165 @@
-<html>
+<!DOCTYPE html>
+<html lang="he">
     <head>
-            <link rel="stylesheet" href="./css/main.css">
-            <script type="text/javascript" src="./lib/jquery.min.js"></script>
-            <script type="text/javascript" src="./javascript/mscript.js"></script>
-            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.js"></script>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.css">
-            <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>בית לכלבים - פומרניאן</title>
+        <link rel="stylesheet" href="../css/pom.css">
+        <script type="text/javascript" src="../lib/jquery.min.js"></script>
+        <script type="text/javascript" src="../javascript/pom.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.css">
+        <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
+        <script type="text/javascript" src="../lib//unitegallery/js/unitegallery.min.js"></script>
+        <link rel="stylesheet" href="../lib/unitegallery/css/unite-gallery.css" type="text/css">
+        <script type='text/javascript' src='../lib/unitegallery/themes/default/ug-theme-default.js'></script> 
+        <link rel='stylesheet' href='../lib/unitegallery/themes/default/ug-theme-default.css' type='text/css'/>
     </head>
-    <body>
-
-        <header class="ui segment" id="main-header">
-            <nav>
-                <ul>
-                    <img class="ui small centered image" src="/img/logo_dogshouse.png"><a href="/"></a></img>
-                    <li><a href="#">פומרניאן</a></li>
-                    <li><a href="#">שיצו</a></li>
-                    <li><a href="#">יורקשייר</a></li>
-                    <li><a href="#">צור קשר</a></li>
-                        <div class="social-wrapper">
-                            <li class="social-facebook"><i class="facebook large icon"></i><a href="#">פייסבוק</a></li>
-                            <li class="social-insta"><i class="instagram large icon"></i><a href="#">אינסטה</a></li>
-                        </div>
-                    </ul>
-                </nav>
-            </header>
-        <div class="ui container">
-            <section class="video">
-                <video class="ui attached segment" autoplay muted loop id="pomVideo">
-                    <source src="/img/pompom.webm" type="video/webm">
-                </video>
-            </section>
-           
-                <section class="ui attached segment" id="section-a">
-                    <div class="showcase-wrapper">
-                        <div class="showcase">
-                            <h1 class="showcase-header">מגדלים באהבה</h1>
-                            <p class="showcase-para">מתמחים בגידול כלבים מיניאטוריים והיפואלרגניים.<br></p>
-                            <p class="showcase-para">אם אתם חושבים על אימוץ כלב, נשמח ולייעץ לכם בתהליך, השאירו לנו פרטים כאן למטה או פשוט התקשרו ונשמח לסייע.</p>
-                            <div class="showcase-btn">
-                                <i class="ui very huge circle down arrow icon" href="#" id="arrow"></i>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="ui attached segment" id="section-b">
-                  <div class="ui dimmer">
-                    <div class="ui text loader">שולח אנא המתנ/י</div>
-                  </div>
-                    <div dir="rtl" class="form">
-                        <form class="ui form" id="form" action="/api/sendmsg" method="POST">
-                          <div class="field">
-                            <div class="ui corner labeled input fullname">
-                              <input type="text" placeholder="שם מלא" name="fullname">
-                              <div class="ui corner label">
-                                <i class="asterisk icon"></i>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="field">
-                            <div class="ui corner labeled input phonenumber">
-                              <input type="tel" placeholder="טלפון" name="phonenumber">
-                              <div class="ui corner label">
-                                <i class="asterisk icon"></i>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="field">
-                            <div class="ui corner labeled input email">
-                              <input type="email" placeholder="אימייל" name="email">
-                              <div class="ui corner label">
-                                <i class="asterisk icon"></i>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="field">
-                            <div class="ui input content">
-                                <input type="text" name="comment" placeholder="תו הפניה"></input>
-                            </div>
-                          </div>
-                            <div dir="rtl" id="errors" class="ui error message"></div>
-                            <div dir="rtl" id="success" class="ui success message"></div>
-                            <div class="clr"></div>
-                          <div class="ui blue submit button" id="submit">שלח</div>
-                      </form>
-                    </div>                      
-
-                </section>
-        </div>
-
-
-        <footer>
-            <div class="wrapper">
-                <h3 class="ui medium centered header footer-header">Created by hM Digital Solutions 2017</h3>
+<body>
+    <header class="ui segment" id="main-header">
+        <nav>
+            <div class="call-banner">
+                <a href="tel:+972502155033" class="ui small inverted blue button">
+                    <i class="large call icon"></i><br/> 
+                     התקשר/י עכשיו<br/>
+                    050-2155033                 
+                <a>
             </div>
-        </footer>
-    </body>
+            <ul>
+                <img class="ui small centered image" src="/img/logo_dogshouse.png"><a href="/"></a></img>
+                <li><a class="active" href="#">פומרניאן</a></li>
+                <li><a class="active" href="./maltese.html">מלטז</a></li>
+                <!-- <li><a href="#">שיצו</a></li>
+                <li><a href="#">יורקשייר</a></li>
+                <li><a href="#">צור קשר</a></li>!-->
+                <div class="social-wrapper">
+                    <li class="social-facebook"><a href="https://www.facebook.com/DogsHouseIsrael/"><i class="facebook large icon"></i>פייסבוק</a></li>
+                    <li class="social-insta"><a href="https://www.instagram.com/dogs.house.israel/"><i class="instagram large icon"></i>אינסטגרם</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <section class="section-a ui container">
+        <div class="heading">
+            <h1 class="ui pink large header">
+               בית לכלבים - פומרניאן
+            </h1>
+        </div>
+        <div class="breed_info">
+            <article class="breed">
+                <h2 class="ui pink medium header">קצת עלינו</h2>
+
+                <blockquote style="font-style:italic">
+                    בית לכלבים פומרניאן - הינו בית גידול המתמחה בגידול כלבים זעירים עם שנים של ניסיון בגידול פומרניאן, שיצו, יורקשייר, מלטז, וקינג צארלס קבליר. הגורים שלנו הם מהרמה הגבוהה ביותר כמו שניתן לראות ובית הגידול נמצאות בפיקוח ווטרינרי צמוד המגיע לביקורות לעיתים תכופות.
+                </blockquote>
+                <br>
+            </article>
+        </div>
+    </section>
+    <section class="section-b" dir="rtl">
+        <div class="heading">
+            <h3 class="ui pink header">גלריה</h3>
+        </div>
+        
+            <div id="gallery" style="display:none">ֿ
+                <img alt="טאיו סרטון"
+                    data-type="youtube"
+                    data-videoid="g6DG8Ud5Mtg"
+                    data-description="גורי פומרניאן למכירה">
+               <img alt="טאיו גור פומרניין אפור אורנג׳" src="/img/pom/pom1.JPG"
+                    data-image="/img/pom/pom1.JPG"
+                    data-description="טאיו גור פומרניין אפור אורנג׳">
+                <img alt="טאיו מדגמן" src="/img/pom/pom2.JPG"
+                    data-image="/img/pom/pom2.JPG"
+                    data-description="טאיו מדגמן">
+                <img alt="טאיו גור פומרניין" src="/img/pom/pom3.JPG"
+                    data-image="/img/pom/pom3.JPG"
+                    data-description="טאיו מיישיר מבט">
+                <img alt="גור פומרניין צעיר בין בובות" src="/img/pom/pom4.JPG"
+                    data-image="/img/pom/pom4.JPG"
+                    data-description="טאיו משחק עם בובות">
+                <img alt="גור פומרניין מתחבא בתמונה" src="/img/pom/pom5.JPG"
+                    data-image="/img/pom/pom5.JPG"
+                    data-description="מצאו את טאיו">
+           </div>
+    </section>
+    <section class="section-c">
+      <div class="ui wide container">
+        <div class="heading">
+            <h2 class="ui pink large header">
+                גור אחרון למהירי החלטה
+            </h2>
+        </div>
+        <div class="behaviour_info">
+            <article class="breed">
+            <blockquote style="font-style:italic">
+                ״טאיו״ - גור פומרניאן זכר בצבע אורנג׳-אפור ברמה גבוהה ביותר, טאיו בעל אף פחוס, פרווה משולשת, רגליים עבות ומנשך תקין 6x6. משקל מקסימלי 1.5 ק״ג גובה מקסימלי 20 ס״מ האמא מתאילנד, האבא מרוסיה ושניהם נמצאים במקום.
+            </blockquote>
+            <br>
+            </article>
+       </div>
+      </div>
+    </section>
+    <section class="section-d">
+        <div class="heading">
+            <h2 class="ui inverted header">השאירו פרטים ונחזור אליכם</h2>
+        </div>
+            <div dir="rtl" class="form ui container">
+                <div class="ui inverted dimmer">
+                    <div class="ui text loader">שולח אנא המתנ/י</div>
+                </div>
+                <form class="ui form" id="form" action="/api/sendmsg" method="POST">
+                  <div class="field">
+                    <div class="ui corner labeled input fullname">
+                      <input type="text" placeholder="שם מלא" name="fullname">
+                      <div class="ui corner label">
+                        <i class="asterisk icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="ui corner labeled input phonenumber">
+                      <input type="tel" placeholder="טלפון" name="phonenumber">
+                      <div class="ui corner label">
+                        <i class="asterisk icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="ui corner labeled input email">
+                      <input type="email" placeholder="אימייל" name="email">
+                      <div class="ui corner label">
+                        <i class="asterisk icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <br/>
+                  <div class="field textarea">
+                        <div class="ui corner labeled input textarea pom">
+                            <textarea rows="4" placeholder="הכנס פניה"></textarea>
+                            <div class="ui corner label">
+                                <i class="asterisk icon"></i>
+                            </div>
+                        </div>
+                  </div>
+                    <div dir="rtl" id="errors" class="ui error message"></div>
+                    <div dir="rtl" id="success"></div>
+                    <div class="clr"></div>
+                  <div class="ui inverted submit button" id="submit">שלח</div>
+              </form>
+            </div>
+    </section>
+    <footer>
+     &copy כל הזכויות שמורות לבית לכלבים 2017
+    </footer>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112801660-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-112801660-1');
+</script>
+</body>
 </html>
