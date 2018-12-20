@@ -26,10 +26,19 @@ div.clr{clear:both;}
     100%  {top: 0px;}
 }
 
+@media only screen and (min-width: 1200px){
+    .ui.container {
+        width: 1000px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    }
+    
+
 /* HEADER */
 #main-header {color:#fff !important;background-color:#FAAFBA !important;margin:0;padding:0;}
 #main-header .call-banner{position:fixed;}
-#main-header .call-banner a.ui.small.inverted.blue.button{color:navy !important;}
+#main-header .call-banner a.ui.small.inverted.blue.button{color:navy !important; background-color: #E03997}
 #main-header ul{text-align:center;list-style-type:none;}
 #main-header li{display:inline;padding:20px;}
 #main-header .social-wrapper {padding:0.5rem;display:inline-block;}
