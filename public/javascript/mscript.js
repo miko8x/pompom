@@ -44,7 +44,7 @@ $(document).ready(function(){
             fullname: $('.fullname input').val(),
             phonenumber: $('.phonenumber input').val(),
             email: $('.email input').val(),
-            content:$('.content input').val(),
+            content: $('textarea').val()
         };
         $.post($(this).attr('action'), $(this).serialize(), function(res){
             if (!res.is_validated){

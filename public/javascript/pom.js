@@ -51,7 +51,7 @@ jQuery(document).ready(function(){
             fullname: $('.fullname input').val(),
             phonenumber: $('.phonenumber input').val(),
             email: $('.email input').val(),
-            content: $('.maltese textarea').val()
+            content: $('textarea').val()
         };
         console.log(data);
         $.post($(this).attr('action'), $(this).serialize(), function(res){

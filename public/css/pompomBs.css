@@ -1,0 +1,9 @@
+body{
+    background-color: rgb(247, 191, 199);
+}
+.nav{
+    background-color: #FAAFBA;
+}
+.nav-link.active{
+    background-color: #E03997!important;
+}

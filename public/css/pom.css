@@ -66,7 +66,7 @@ div.clr{clear:both;}
 .section-d .form .field{display:inline-block;padding:1%;}
 .section-d .form .field input{text-align:center;}
 .section-d .form .field .ui.input{width:200px;}
-.section-d .form .field #comment{width:14rem !important;}
+.section-d .form .field .comment{width:14rem !important;}
 .section-d .ui.error.message ul.list{list-style-type:none !important;text-align:center !important;}
 .section-d li:before{display:none;}
 .section-d #success{display:inline;}
@@ -77,7 +77,7 @@ div.clr{clear:both;}
     padding: 0 !important;
 }*/
 
-.field.textarea{
+.field .textarea{
     width: 60%;
 }
 
