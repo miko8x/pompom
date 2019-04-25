@@ -15,7 +15,7 @@
 *{margin:0;padding:0;}
 body{direction:rtl;font-family:AlmoniBold, Arial sans-serif !important;font-size:17px !important;background-color:#f4f4f4 !important;line-height:1.6em !important;}
 h1,h2,h3,h4,h5,h6{color:#1E90FF !important; font-family:AlmoniBold, Arial, sans-serif !important;text-align:center;}
-ul{;}
+ul{}
 li{font-size:17px;}
 a{color:#fff !important;}
 a:hover{color:#FAAFBA !important;background-color:#fff;}

@@ -34,7 +34,7 @@ div.clr{clear:both;}
 #main-header ul{text-align:center;list-style-type:none;}
 #main-header li{display:inline;direction: rtl;text-align: right}
 #main-header .social-wrapper{padding:0.5rem;display:inline-block;text-align: right;}
-#main-header .social-facebook:hover > a{ ;background-color:wh#FAAFBA !important;color:#fff !important;}
+#main-header .social-facebook:hover > a{background-color:wh#FAAFBA !important;color:#fff !important;}
 #main-header .social-facebook:hover > i{color:blue !important;}
 #main-header .social-insta:hover > a{background-color:#FAAFBA !important;color:#fff !important;}
 #main-header .social-insta:hover > i{color:coral;}
