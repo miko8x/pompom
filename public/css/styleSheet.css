@@ -17,7 +17,7 @@ body{direction:rtl;font-family:AlmoniBold, Arial sans-serif !important;font-size
 h1,h2,h3,h4,h5,h6{color:#1E90FF !important; font-family:AlmoniBold, Arial, sans-serif !important;text-align:center;}
 ul{margin-bottom: 50%}
 li{font-size:17px;}
-.nav-item .nav-link:hover{color:#E03997 !important;background-color:#fff;border-radius: 90%;}
+.nav-item .nav-link:hover{color:#E03997 !important;background-color:#fff;border-radius: 90% !important;}
 div.clr{clear:both;}
 @keyframes mymove {
     0%   {top: 0px;}
@@ -32,9 +32,6 @@ div.clr{clear:both;}
 #main-header {color:#fff !important;background-color:#FAAFBA !important;margin:0;padding:0;}
 #main-header ul{text-align:center;list-style-type:none;}
 #main-header li{display:inline;direction: rtl;text-align: right}
-#main-header .social-wrapper{padding:0.5rem;display:inline-block;text-align: right;}
-#main-header .social-facebook:hover > a{background-color:white !important;color:#fff !important;}
-#main-header .social-facebook:hover > i{color:blue !important;}
 
 /* MAIN */
 section.video{}
@@ -92,7 +89,8 @@ ul li a:hover{color: white;border-radius: 90%;}
 and (min-device-width : 320px) 
 and (max-device-width : 520px) {
 .section-a{padding-top: 20%}
-.navTelephoneLink{display: inline-block;margin-left: 4%;font-size: 20px;color: white;}
+.navTelephoneLink{display: inline-block;margin-left: 5%;font-size: 20px;color: white;}
+
 .nav-item .nav-link:hover{color:#E03997 !important;background-color:#fff;border-radius: 0;}
 
 }
@@ -103,14 +101,13 @@ and (min-width : 700px) {
 /* Styles */
 #main-header li{padding-left: 10px;}
 .nav-item .nav-link:hover{color:#E03997 !important;background-color:#fff;border-radius: 0;}
-.navTelephoneLink{display: inline-block;margin-left: 30%;font-size: 20px;color: white;}
 
 }
 
 @media only screen 
 and (max-width : 360px) {
 /* Styles */
-#navTelephoneLink{display: inline-block;margin-left: 0;font-size: 20px;color: white;}
+.navTelephoneLink{display: inline-block;margin-left: 0;font-size: 20px;color: white;}
 
 }
 
@@ -123,11 +120,12 @@ and (max-width : 320px) {
 /* iPads (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
+and (max-device-width : 900px) {
 /* Styles */
 .section-a{padding-top: 20%}
+.navTelephoneLink{display: inline-block;margin-left: 30%;font-size: 20px;color: white;}
+.social-facebook{margin: 8px 50px 0 0 ;}
 
-#navTelephoneLink{display: inline-block;margin-left: 25%;}
 }
 
 /* iPads (landscape) ----------- */
