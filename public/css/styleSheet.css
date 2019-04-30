@@ -18,6 +18,7 @@ h1,h2,h3,h4,h5,h6{color:#1E90FF !important; font-family:AlmoniBold, Arial, sans-
 ul{margin-bottom: 50%}
 li{font-size:17px;}
 .social-facebook{margin: 8px 50px 0 0 ;}
+.social-facebook a{color: blue;}
 .nav-item .nav-link:hover{color:#E03997 !important;background-color:#fff;border-radius: 90% !important;}
 div.clr{clear:both;}
 @keyframes mymove {
