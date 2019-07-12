@@ -53,7 +53,7 @@ jQuery(document).ready(function(){
             email: $('.email input').val(),
             content: $('textarea').val()
         };
-        console.log(data);
+        console.log($(this).serialize());
         $.post($(this).attr('action'), $(this).serialize(), function(res){
             if (!res.is_validated){
                 modifyCss('.ui.dimmer', 'remove', 'active');
